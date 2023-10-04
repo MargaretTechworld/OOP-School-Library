@@ -1,12 +1,13 @@
 # class for person
 class Person
-  attr_accessor :id, :name, :age, :parent_permission
+  attr_accessor :name, :age
+  attr_reader :id, :parent_permission
 
-  def initialize(id, age, name = 'unknown', parent_permission: true)
-    @id = id
+  def initialize(age, name = 'unknown')
+    @id =  Random.rand(1..1000)
     @name = name
     @age = age
-    @parent_permission = parent_permission
+    @parent_permission = true
   end
 
   def of_age?
@@ -22,8 +23,8 @@ class Person
   end
 end
 
-person1 = Person.new(1, 15, 'John')
+person1 = Person.new(15, 'John')
 puts person1.name
 puts person1.name = 'Mary'
-person1.of_age?
-person1.can_use_services?
+puts person1.of_age?
+puts person1.can_use_services?
