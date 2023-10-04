@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'person'
 
 # class for student
@@ -12,7 +10,7 @@ class Student < Person
   end
 
   def play_hooky?
-    "¯\(ツ)/¯"
+    '¯\(ツ)/¯'
   end
 end
 
