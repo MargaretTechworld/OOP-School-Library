@@ -17,7 +17,6 @@ class Student < Person
     @classroom = classroom
     classroom.students.push(self) unless classroom.students.include?(self)
   end
-
 end
 
 student1 = Student.new(10, 'class', 'mag')
