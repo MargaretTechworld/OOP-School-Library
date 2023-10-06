@@ -44,6 +44,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Create class for Person, Student and Teachers**
+- **Decorate a class**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,9 +99,9 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Decorate a class]**
 - **[Set up associations]**
 - **[Add basic UI]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
