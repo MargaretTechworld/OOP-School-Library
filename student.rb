@@ -18,10 +18,3 @@ class Student < Person
     classroom.students.push(self) unless classroom.students.include?(self)
   end
 end
-
-student1 = Student.new('mag', 'CLASS', 10)
-puts student1.of_age?
-puts student1.can_use_services?
-puts student1.name
-puts student1.classroom
-puts student1.age

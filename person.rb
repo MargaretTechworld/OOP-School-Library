@@ -35,10 +35,3 @@ class Person < Nameable
     @name
   end
 end
-
-person1 = Person.new(15, 'John')
-puts person1.name
-puts person1.name = 'Mary'
-puts person1.of_age?
-puts person1.can_use_services?
-puts person1.correct_name

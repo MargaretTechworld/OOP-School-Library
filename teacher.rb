@@ -13,6 +13,3 @@ class Teacher < Person
     true
   end
 end
-
-teacher1 = Teacher.new(20, 'dd', 'hjj')
-puts teacher1.id
