@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # class for person
 class Classroom
   attr_accessor :label, :students
