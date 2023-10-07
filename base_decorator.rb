@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 require_relative 'nameable'
 
 # class for Decorator
+
 class Decorator < Nameable
   attr_accessor :nameable
 

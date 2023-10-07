@@ -46,6 +46,7 @@
 - **Create class for Person, Student and Teachers**
 - **Decorate a class**
 - **[Set up associations]**
+- **[Add basic UI]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,8 +100,6 @@ Example commands:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- **[Add basic UI]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
