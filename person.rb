@@ -9,7 +9,7 @@ class Person < Nameable
     super()
     @id = Random.rand(1..1000)
     @name = name
-    @age = age
+    @age = age.to_i
     @parent_permission = parent_permission
     @rentals = []
   end
@@ -35,10 +35,3 @@ class Person < Nameable
     @name
   end
 end
-
-person1 = Person.new(15, 'John')
-puts person1.name
-puts person1.name = 'Mary'
-puts person1.of_age?
-puts person1.can_use_services?
-puts person1.correct_name
