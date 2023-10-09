@@ -11,3 +11,4 @@ def prompt
     call_option(option)
   end
 end
+main
