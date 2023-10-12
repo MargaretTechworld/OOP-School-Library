@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def show_options
   puts "\nPlease choose and option by entering a number:
 1 - List all books\n2 - List all people\n3 - Create a person

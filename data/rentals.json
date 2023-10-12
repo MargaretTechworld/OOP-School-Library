@@ -1,0 +1,16 @@
+[
+  {
+    "date": "3/2/1",
+    "book": {
+      "title": "title1",
+      "author": "Author1"
+    },
+    "person": {
+      "id": 1,
+      "name": "teacher1",
+      "age": 40,
+      "parent_permission": false,
+      "specialization": "Maths"
+    }
+  }
+]
