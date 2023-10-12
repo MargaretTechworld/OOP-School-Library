@@ -116,7 +116,7 @@ class App
     end
 
     book = @books[book_index]
-    puts "\nSelect a person from the following list by number (not id)"
+    puts "Select a person from the following list by number (not id)"
     list_people_with_index
     person_index = gets.chomp.to_i
     unless (0...@people.length).include?(person_index)
