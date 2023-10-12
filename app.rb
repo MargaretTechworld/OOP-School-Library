@@ -142,7 +142,7 @@ class App
     @rentals.each do |rental|
       if rental.person.id == person_id
         rentals_found = true
-        puts "Person ID: #{rental.person.id}\n Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"
+        puts "Person ID: #{rental.person.id}, Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"
       end
     end
 

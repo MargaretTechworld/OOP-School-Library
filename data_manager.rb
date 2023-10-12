@@ -45,7 +45,7 @@ end
 
 def load_rental(file_path)
   return unless File.exist?(file_path)
-  
+
   rental_data = JSON.parse(File.read(file_path))
 
   rental_data.each do |rental_hash|
