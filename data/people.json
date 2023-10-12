@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "ee",
+    "age": 33,
+    "parent_permission": true,
+    "classroom": "unknown"
+  },
+  {
+    "id": 1,
+    "name": "err",
+    "age": 45,
+    "parent_permission": false,
+    "specialization": "tyy"
+  }
+]
