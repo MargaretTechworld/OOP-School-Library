@@ -116,7 +116,7 @@ class App
     end
 
     book = @books[book_index]
-    puts "Select a person from the following list by number (not id)"
+    puts 'Select a person from the following list by number (not id)'
     list_people_with_index
     person_index = gets.chomp.to_i
     unless (0...@people.length).include?(person_index)
@@ -142,7 +142,7 @@ class App
     @rentals.each do |rental|
       if rental.person.id == person_id
         rentals_found = true
-        puts " Person ID: #{rental.person.id} \n Date: #{rental.date},\n Book: #{rental.book.title} by #{rental.book.author}"
+        puts "Person ID: #{rental.person.id}\n Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"
       end
     end
 
