@@ -15,7 +15,7 @@ class App
     @people = []
     load_people('data/people.json')
     load_books('data/books.json')
-
+    load_rental('data/rentals.json')
   end
 
   # Lists all books
@@ -131,7 +131,7 @@ class App
     date = gets.chomp.to_s
     @rentals.push(Rental.new(date, book, person))
     puts 'Rental created successfully'
-  
+    save_rental('data/rentals.json')
   end
 
   # Lists rentals for a given person ID

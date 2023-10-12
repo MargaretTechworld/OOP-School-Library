@@ -40,4 +40,29 @@ def load_books(filename)
   puts "Book data loaded from #{filename}"
 end
 
+def save_rental(filename)
+  data = @rentals.map(&:to_hash)
+  save_data(filename, data, 'Rental')
+end
 
+def load_rental(file_path)
+  return unless File.exist?(file_path)
+  rental_data = JSON.parse(File.read(file_path))
+
+  rental_data.each do |rental_hash|
+    book = @books.find { |b| b.title == rental_hash['book']['title'] }
+    person = @people.find { |p| p.id == rental_hash['person']['id'] }
+
+    rental = Rental.new(rental_hash['date'], book, person)
+    @rentals << rental
+  end
+end
+
+private
+
+def save_data(filename, data, data_type)
+  File.open(filename, 'w') do |file|
+    file.write(JSON.pretty_generate(data))
+  end
+  puts "#{data_type} data saved to #{filename}"
+end

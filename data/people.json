@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "name": "name 1",
-    "age": 34,
+    "name": "ron",
+    "age": 12,
     "parent_permission": true,
     "classroom": "unknown"
   },
   {
     "id": 1,
-    "name": "teacher1",
-    "age": 40,
+    "name": "snape",
+    "age": 43,
     "parent_permission": false,
-    "specialization": "Maths"
+    "specialization": "potions"
   }
 ]
