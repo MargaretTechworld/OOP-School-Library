@@ -105,32 +105,57 @@ class App
     save_books('data/books.json')
   end
 
-  # Creates a new rental
-  def create_rental
-    puts 'Select a book from the following list by number'
-    list_books_with_index
-    book_index = gets.chomp.to_i
-    unless (0...@books.length).include?(book_index)
-      puts "Can not add a record. Book #{book_index} doesn't exist"
-      return
-    end
-
-    book = @books[book_index]
-    puts 'Select a person from the following list by number (not id)'
-    list_people_with_index
-    person_index = gets.chomp.to_i
-    unless (0...@people.length).include?(person_index)
-      puts "Can not add a record. Person #{person_index} doesn't exist"
-      return
-    end
-
-    person = @people[person_index]
-    print 'Date: '
-    date = gets.chomp.to_s
-    @rentals.push(Rental.new(date, book, person))
-    puts 'Rental created successfully'
-    save_rental('data/rentals.json')
+# Creates a new rental
+def create_rental
+  puts 'Select a book from the following list by number'
+  list_books_with_index
+  book_index = gets.chomp.to_i
+  unless valid_book_index?(book_index)
+    puts "Can not add a record. Book #{book_index} doesn't exist"
+    return
   end
+
+  book = @books[book_index]
+  person = select_person
+  return unless person
+
+  date = enter_date
+  return unless date
+
+  @rentals.push(Rental.new(date, book, person))
+  puts 'Rental created successfully'
+  save_rental('data/rentals.json')
+end
+
+# Helper method to check if the book index is valid
+def valid_book_index?(index)
+  (0...@books.length).include?(index)
+end
+
+# Helper method to select a person from the list
+def select_person
+  puts 'Select a person from the following list by number (not id)'
+  list_people_with_index
+  person_index = gets.chomp.to_i
+  unless valid_person_index?(person_index)
+    puts "Can not add a record. Person #{person_index} doesn't exist"
+    return nil
+  end
+
+  @people[person_index]
+end
+
+# Helper method to check if the person index is valid
+def valid_person_index?(index)
+  (0...@people.length).include?(index)
+end
+
+# Helper method to enter the rental date
+def enter_date
+  print 'Date: '
+  gets.chomp.to_s
+end
+
 
   # Lists rentals for a given person ID
   def list_rentals
