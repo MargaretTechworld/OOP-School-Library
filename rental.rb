@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Renntal  class
 class Rental
   attr_accessor :date, :book, :person

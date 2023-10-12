@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'student'
 require_relative 'teacher'
 require 'json'
@@ -47,6 +45,7 @@ end
 
 def load_rental(file_path)
   return unless File.exist?(file_path)
+
   rental_data = JSON.parse(File.read(file_path))
 
   rental_data.each do |rental_hash|
@@ -61,7 +60,7 @@ end
 private
 
 def save_data(filename, data, data_type)
-  File.open(filename, 'w') do |file|
+  File.write(filename, 'w') do |file|
     file.write(JSON.pretty_generate(data))
   end
   puts "#{data_type} data saved to #{filename}"
