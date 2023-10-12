@@ -5,13 +5,20 @@ class Person < Nameable
   attr_accessor :name, :age, :rentals
   attr_reader :id
 
+  @count = 1
   def initialize(age, name = 'unknown', parent_permission: true)
     super()
-    @id = Random.rand(1..1000)
+    @id = self.class.next_id
     @name = name
     @age = age.to_i
     @parent_permission = parent_permission
     @rentals = []
+  end
+
+  def self.next_id
+    @count ||= 1
+    @count += 1
+    @count - 1
   end
 
   def classroom=(classroom)
@@ -33,5 +40,22 @@ class Person < Nameable
 
   def correct_name
     @name
+  end
+
+  def to_hash
+    {
+      id: @id,
+      name: @name,
+      age: @age,
+      parent_permission: @parent_permission
+    }
+  end
+
+  def self.from_hash(hash)
+    new(
+      hash['age'],
+      hash['name'],
+      parent_permission: hash['parent_permission']
+    )
   end
 end

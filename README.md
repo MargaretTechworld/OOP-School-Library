@@ -1,139 +1,102 @@
-<!-- TABLE OF CONTENTS -->
+
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+  - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
+  - [Installation](#installation)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [OOP-School-Library] <a name="about-project"></a>
+# 📖 School Library <a name="about-project"></a>
 
-**[OOP-School-Library]** This app is used to record which books are in the library and who borrows themis a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.
-
-
+**School Library** is an app to record what books are in the library and who borrows them. The project is built in Ruby.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+### Tech Stack
+
+This project is built using the following technologies:
 
 <details>
-  <summary>Ruby</summary>
+<summary>Programming Languages</summary>
   <ul>
-    <li><a href="https://ruby.com/">Ruby</a></li>
+    <li>Ruby</li>
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
-- **Create class for Person, Student and Teachers**
-- **Decorate a class**
-- **[Set up associations]**
-- **[Add basic UI]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- coming soon
+- Add new students or teachers
+- Add new books
+- Save records of who borrowed a given book and when
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running, follow these steps.
+## Getting Started <a name="getting-started"></a>
 
 ### Prerequisites
 
-In order to run this project you need:
+Before running this project, make sure you have the following prerequisites installed:
 
-Live server, and
-npm
+- Ruby
 
-### Setup
+### Installation <a name="installation"></a>
 
 Clone this repository to your desired folder:
-
-Example commands:
-
-*git clone git@github.com:MargaretTechworld/OOP-School-Library.git
-
-*cd OOP-School-Library
-
-*git checkout PST_Class
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+   git clone https://github.com/MargaretTechworld/OOP-School-Library
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Margaret**
+#### 👤 Margaret Kojo-Musa
+GitHub: @MargaretTechworld<br>
+Twitter: @KojoMargaret<br>
+LinkedIn: Margaret Kojo-Musa<br>
 
-- GitHub: [@githubhandle](https://github.com/MargaretTechworld)
-- Twitter: [@twitterhandle](https://twitter.com/KojoMargaret)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/margaret-kojo-musa-13a408147/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
+#### 👤 Joyce Cruz
+GitHub: @balatstar<br>
+Twitter: @balatstar<br>
+LinkedIn: Joyce Cruz<br>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- Front-end user interface
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/MargaretTechworld/OOP-School-Library/issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
+Feel free to check the issues page.
+[issues page](https://github.com/MargaretTechworld/OOP-School-Library/issues).
 
 ## ⭐️ Show your support <a name="support"></a>
+<br>
+If you find this project useful, please consider giving it a star!
 
-If you like this project give it a star!
+[![Star](https://github.com/MargaretTechworld/OOP-School-Library?style=social)](https://github.com/MargaretTechworld/OOP-School-Library)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse for this great opportunity!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+We would like to express our gratitude to the contributors and anyone who uses or supports this project.
 
 <!-- LICENSE -->
-
 ## 📝 License <a name="license"></a>
-
-This project is [MIT](LICENSE) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project is [MIT](./LICENSE) licensed.

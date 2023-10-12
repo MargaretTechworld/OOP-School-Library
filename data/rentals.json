@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2020",
+    "book": {
+      "title": "err",
+      "author": "tyy"
+    },
+    "person": {
+      "id": 1,
+      "name": "err",
+      "age": 45,
+      "parent_permission": false,
+      "specialization": "tyy"
+    }
+  }
+]
