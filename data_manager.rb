@@ -60,8 +60,6 @@ end
 private
 
 def save_data(filename, data, data_type)
-  File.open(filename, 'w') do |file|
-    file.write(JSON.pretty_generate(data))
-  end
+  File.write(filename, JSON.pretty_generate(data))
   puts "#{data_type} data saved to #{filename}"
 end
